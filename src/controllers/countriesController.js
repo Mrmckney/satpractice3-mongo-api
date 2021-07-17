@@ -6,7 +6,6 @@ exports.createCountry = (req, res) => {
     .save()
     .then(() => res.status(200).send('Created country'))
     .catch(err => console.error('Could not create country', err))
-
 }
 // updates country
 exports.updateCountry = (req, res) => {
@@ -29,5 +28,3 @@ exports.getOneCountry = (req, res) => {
     .then(country => res.send(country))
     .catch(err => console.log('Could not get one country', err))
 }
-
-
