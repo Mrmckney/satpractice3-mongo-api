@@ -21,5 +21,3 @@ mongoose
 // use the country routes
 const countryRoute = require('./src/routes/countryRoute')
 app.use(countryRoute)
-
-
