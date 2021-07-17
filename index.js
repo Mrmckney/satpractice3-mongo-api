@@ -7,7 +7,7 @@ require('dotenv/config')
 const app = express()
 app.use(express.json())
 app.use(cors())
-
+// connect to mongo database
 mongoose
     .connect(process.env.DB_CONNECTION,{
         useNewUrlParser: true, 
@@ -18,7 +18,7 @@ mongoose
         console.log('Houston were connected')
     }))
     .catch(err => console.log(err))
-
+// use the country routes
 const countryRoute = require('./src/routes/countryRoute')
 app.use(countryRoute)
 

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-
+// Schema for country
 const CountrySchema = mongoose.Schema({
     name: String,
     capital: String,
